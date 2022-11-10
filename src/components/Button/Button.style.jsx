@@ -2,15 +2,22 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 export const ButtonWrapper = styled.button`
-  color: #fff;
+  display: inline-block;
+  background-color: #5072a7;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
   border: none;
-  border-radius: 0.25rem;
+  padding: 1.25rem 4.5rem;
+  border-radius: 10rem;
   cursor: pointer;
-  text-transform: capitalize;
-  padding: 0.25rem;
-  display: block;
-  width: 200px;
-  margin: 1rem auto;
+  color: #f4f4f4;
+
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #444;
+  }
 
   ${(props) => {
     if (props.variant === 'primary') {
@@ -21,7 +28,23 @@ export const ButtonWrapper = styled.button`
     }
     if (props.variant === 'secondary') {
       return css`
-        background-color: #645cff;
+        color: #5072a7;
+        font-size: 1.7rem;
+        border: none;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 2px;
+      `;
+    }
+
+    if (props.variant === 'navigation') {
+      return css`
+        color: #222;
+        background-color: #5072a7;
+        font-size: 1.7rem;
+        border: none;
+        font-weight: 400;
+        padding: 0.8rem 2.5rem;
+        border-radius: 3rem;
       `;
     }
   }}

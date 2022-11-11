@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './Navigation.style.css';
+import './Navigation.style.scss';
+import Logo from '../../img/logo.png';
 import Button from '../Button/Button';
 
 const Navigation = () => {
   return (
     <nav className='nav'>
-      <img className='nav__logo' alt='Pacific Bay Media Logo' />
+      <img className='nav__logo' src={Logo} alt='Pacific Bay Media Logo' />
       <ul className='nav__links'>
         <li className='nav__item'>
           <a href='' className='nav__link'>

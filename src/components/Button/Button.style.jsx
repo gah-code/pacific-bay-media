@@ -11,7 +11,7 @@ export const ButtonWrapper = styled.button`
   font-family: inherit;
   font-weight: 500;
   border: none;
-  padding: 1.25rem 4.5rem;
+  padding: 1.2rem 4.5rem;
   border-radius: 10rem;
   cursor: pointer;
   color: #f4f4f4;

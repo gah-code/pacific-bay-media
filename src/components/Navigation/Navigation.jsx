@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Navigation.style.scss';
-import Logo from '../../img/logo.png';
+import Logo from '../../img/pacific-bay-media.png';
 import Button from '../Button/Button';
 
 const Navigation = () => {
